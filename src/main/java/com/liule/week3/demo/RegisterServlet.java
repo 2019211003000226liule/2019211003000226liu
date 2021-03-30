@@ -15,12 +15,12 @@ public class RegisterServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String s;
-        String username = request.getParameter( s:"username");
-        String password = request.getParameter( s: "password");
-        String email = request.getParameter( s: "email");
-        String gender = request.getParameter( s: "gender");
-        String birthDate = request.getParameter( s: "birthDate");
+
+        String username = request.getParameter("usernaem");
+        String password = request.getParameter("password");
+        String email = request.getParameter("email");
+        String gender = request.getParameter("gender");
+        String birthDate = request.getParameter("birthDate");
 
         PrintWriter writer = response.getWriter();
         writer.println("<br>username :"+username);
